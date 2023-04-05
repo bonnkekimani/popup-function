@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <!-- //pop up button-->
+            <div class="container">
+                <h1>POPUP LOGIN</h1>
+                <a href="#" class="button">LOGIN</a>
+    
+            </div>
+
+                    <!-- //pop up window -->
+        <div class="popup">
+            <div class="popup-content"></div>
+            <img src="https://t3.ftcdn.net/jpg/04/37/51/90/240_F_437519066_OLrSfrnBk5hioGeje96IZ0ejr8Xrozw3.jpg" alt="close" >
+            <img src="https://t4.ftcdn.net/jpg/02/29/75/83/240_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" alt="user" >
+            <input type="text" placeholder="Name of the project">
+            <input type="text" placeholder="Description of the project">
+            <input type="text" placeholder="Budget of the project">
+            <input type="text" placeholder="Location of the project">
+            <input type="text" placeholder="Likes of the project">
+            <a href="#" class="button">Login</a>
+          </div>
+
+
+
+          <script>
+            document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+})
+document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none"; 
+})
+          </script>
+</body>
+</html>
